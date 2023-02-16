@@ -8,23 +8,23 @@ body {
     color: #1F3F68;
 }
 
-.header {
+.heading {
     font-size: 64px;
     color: #1F3F68;
 }
 
-.header_h2 {
+.heading_h2 {
     font-weight: 500; 
     font-size: 44px;
     text-align: center;
 }
 
-.header_h3 {
+.heading_h3 {
     font-size: 36px;
     text-align: center;
 }
 
-.header_h4 {
+.heading_h4 {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
