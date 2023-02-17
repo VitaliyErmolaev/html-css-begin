@@ -1,5 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .paragraf {
@@ -8,13 +23,22 @@ body {
     color: #1F3F68;
 }
 
+.paragraf_after_h1 {
+    width: 425px;
+}
+
+.paragraf_footer {
+    width: 496px;
+}
+
 .heading {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
 }
 
 .heading_h2 {
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
@@ -28,6 +52,29 @@ body {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+}
+
+.cardbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 359px;
+}
+
+.heading_h3_footer {
+    width: 340px;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_and_form {
+    display: flex;
+    justify-content: space-between;
 }
 
 .input {
