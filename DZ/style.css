@@ -7,9 +7,19 @@ body {
     font-family: sans-serif
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
 .top {
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
-    height: 768px;
+    max-height: 768px;
 }
 
 .top_box {
@@ -24,6 +34,7 @@ body {
     background-image: url(img/top_illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    padding-bottom: 190px;
 }
 
 .container {
@@ -48,7 +59,7 @@ body {
 }
 
 .paragraf_after_h1 {
-    width: 425px;
+    max-width: 425px;
 }
 
 .paragraf_project {
@@ -307,4 +318,127 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header_info {
+        background-size: 50%;
+        background-position: right 270px;
+    }
+
+    .cardbox {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 96px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .project_text_photo23 {
+        left: 20px;
+        top: 20px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .header {
+        padding-top: 16px;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header_info {
+        padding-top: 36px;
+    }
+
+    .heading {
+
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        width: 100%;
+    }
+
+    .header_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top_button {
+        font-size: 12px;
+        padding: 0 10px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    .header_info {
+        padding-bottom: 41px;
+    }
+
+    .header_info {
+        background-image: none;
+    }
+
+    .what_we_do {
+        padding-top: 32px;
+    }
+
+    .cardbox {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .heading_h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .project_photo {
+        padding-bottom: 16px;
+    }
+
+    .paragraf_project {
+        padding-bottom: 80px;
+    }
+
+    .project_text_photo1 {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project_text_photo23 {
+        font-size: 16px;
+        line-height: 19px;
+        left: 16px;
+        top: 16px;
+    }
+
+    .project_photo_box {
+        flex-direction: column;
+    }
+
+    .img_project_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
 }
