@@ -10,63 +10,84 @@
 </head>
 
 <body>
-    <div class="container">
-        <ul class="header">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="contact_header">
-            <h2 class="heading_h2">Contact Us</h2>
-            <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, tempore?</p>
-        </div>
-        <form action="#" class="contact_and_form">
-            <div class="contact_info">
-                <img src="img/picture.jpg" alt="" width="360px">
-                <h4 class="heading_h4">Adress</h4>
-                <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <h4 class="heading_h4">Phone</h4>
-                <ul>
-                    <li>+123456789</li>
-                    <li>+987654321</li>
-                </ul>
-                <h4 class="heading_h4">Online service</h4>
-                <ul>
-                    <li>google.com</li>
-                    <li>email@email.ru</li>
+    <div class="wrapper">
+        <div class="content">
+            <div class="container">
+                <ul class="header">
+                    <li><a href="index.html"><img src="img/main.svg" alt="main"></a></li>
+                    <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
                 </ul>
             </div>
-            <div class="form">
-                <h4 class="heading_h4">Send us message</h4>
-                <label for="name">Full Name</label>
-                <input class="input" type="text" id="name"><br>
-                <label for="email">Email</label>
-                <input class="input" type="email" id="email"><br>
-                <label for="textarea">Message</label>
-                <textarea class="input" name="" id="textarea" cols="20" rows="10"></textarea><br>
-                <button class="button_submit" type="submit">Submit</button>
-            </div>
-        </form>
-        <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab633bce397a6548c41fa9f1f04f1765766b96ec849a9c871d303abf2012d771f&amp;width=1140&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="footer_top">
-                <div class="footer_text">
-                    <h3 class="heading_h3 heading_h3_footer">Intersted to woek with our team?</h3>
-                    <p class="paragraf paragraf_footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="contact_header">
+                <div class="container">
+                    <div class="box">
+                        <h2 class="heading_h2">Contact Us</h2>
+                        <p class="paragraf paragraf_after_h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Deserunt rem itaque non incidunt? Eaque hic accusamus laboriosam animi aliquam dolore enim
+                            dolorem nihil quidem repellendus.</p>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="footer_bottom">
-                <ul class="footer_info">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li> + 8900 000-00-00</li>
-                    <li>website@mail.ru</li>
-                </ul>
-                <div class="footer_copy">
-                    <p class="paragraf">&copy; Все права защищены</p>
+            <div class="container container_submit">
+                <form action="#" class="contact_and_form">
+                    <div class="contact_info">
+                        <img class="cotact_woman" src="img/contact_woman.png" alt="">
+                        <h4 class="heading_h4 heading_h4_left">Adress</h4>
+                        <p class="paragraf paragraf_contact_left">Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <h4 class="heading_h4 heading_h4_left">Phone</h4>
+                        <ul class="number">
+                            <li class="tel">+123456789</li>
+                            <li class="tel">+987654321</li>
+                        </ul>
+                        <h4 class="heading_h4 heading_h4_left">Online service</h4>
+                        <ul class="number">
+                            <li class="web"><a href="google.com">Сайт</a></li>
+                            <li class="mail"><a href="mailto:service@mail.ru">Почта</a></li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <h4 class="heading_h4 heading_h4_right">Send us message</h4>
+                        <label class="add" for="name">Full Name</label>
+                        <input class="input" type="text" id="name" placeholder="Ivanov Ivan Ivanovic"><br>
+                        <label class="add" for="email">Email</label><br>
+                        <input class="input" type="email" id="email" placeholder="Your Email"><br>
+                        <label class="add" for="textarea">Message</label><br>
+                        <textarea class="input" name="" id="textarea" rows="3"
+                            placeholder="Your Message"></textarea><br>
+                        <button class="button_submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container container_submit">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?scroll=true&amp;um=constructor%3Ab633bce397a6548c41fa9f1f04f1765766b96ec849a9c871d303abf2012d771f"
+                    frameborder="0" allowfullscreen="true" width="100%" height="345px" style="display: block;"></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="footer_text">
+                        <h3 class="heading_h3 heading_h3_footer">Intersted to woek with our team?</h3>
+                        <p class="paragraf paragraf_footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <a href="#" class="footer_button">Let’s Talk</a>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="container">
+                <div class="footer_bottom">
+                    <ul class="footer_info">
+                        <li class="footer_list footer_list_margin">Lorem ipsum dolor sit amet.</li>
+                        <li class="footer_list footer_list_margin"> + 8900 000-00-00</li>
+                        <li class="footer_list">website@mail.ru</li>
+                    </ul>
+                    <div class="footer_copy">
+                        <p class="paragraf_copy">&copy; Все права защищены</p>
+                    </div>
                 </div>
             </div>
         </div>
