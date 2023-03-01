@@ -1,3 +1,5 @@
+$color-site: #1F3F68;
+
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +54,7 @@ body {
 .paragraf {
     font-size: 16px;
     line-height: 26px;
-    color: #1F3F68;
+    color: $color-site;
     font-weight: 400;
     letter-spacing: 0.05em;
     opacity: 0.6;
@@ -107,7 +109,7 @@ body {
 
 .heading {
     font-size: 64px;
-    color: #1F3F68;
+    color: $color-site;
     width: 510px;
     font-weight: 300;
     line-height: 74px;
@@ -138,7 +140,7 @@ body {
 .heading_h4 {
     font-size: 20px;
     line-height: 30px;
-    color: #1F3F68;
+    color: $color-site;
     font-weight: 400;
     letter-spacing: 0.05em;
     margin-bottom: 14px;
@@ -277,11 +279,11 @@ body {
 }
 
 .footer_list:first-child::before {
-    content: "A.  ";
+    content: "A. ";
 }
 
 .footer_list:nth-child(2)::before {
-    content: "T.  ";
+    content: "T. ";
 }
 
 .footer_list:last-child::before {
@@ -338,7 +340,7 @@ body {
     background-position: center;
     min-height: 251px;
     margin-top: 54px;
-
+    background-size: cover;
 }
 
 .box {
@@ -352,6 +354,8 @@ body {
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
     padding-bottom: 50px;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .heading_h4_left {
@@ -360,7 +364,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
     margin-bottom: 24px;
 }
 
@@ -378,7 +382,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
 }
 
 .number {
@@ -408,7 +412,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
-    color: #1F3F68;
+    color: $color-site;
 }
 
 .form {
@@ -425,7 +429,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
     margin-bottom: 48px;
 }
 
@@ -438,7 +442,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
     opacity: 1;
     box-sizing: border-box;
 }
@@ -448,7 +452,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
     opacity: 0.8;
 }
 
@@ -461,7 +465,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: $color-site;
     opacity: 0.5;
 }
 
@@ -523,6 +527,19 @@ body {
         flex-direction: column;
     }
 
+    .contact_and_form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_info {
+        margin-bottom: 64px;
+    }
+
+    .container_submit {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width:767px) {
@@ -662,5 +679,18 @@ body {
 
     .paragraf_copy {
         text-align: center;
+    }
+
+    .contact_and_form {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .button_submit {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
